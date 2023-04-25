@@ -131,8 +131,6 @@ function listen() {
     },
     options
   );
-
-
 }
 
 // Agregar un argumento de callback a la función speak
@@ -187,7 +185,6 @@ function callGPT3API(text) {
       const data = result;
       return data.choices[0].message.content.trim();
     });
-
 }
 
 function speak(text) {
@@ -203,8 +200,6 @@ function speak(text) {
     status.textContent = 'Respuesta: ' + text;
     listen();
   });
-
-
 }
 
 app.initialize();
